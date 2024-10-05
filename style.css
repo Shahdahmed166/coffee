@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: transparent;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  backdrop-filter: blur(5px);
+  flex-wrap: wrap;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo img {
+  width: 60%;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  color: blanchedalmond;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.nav-links a:hover {
+  color: rgb(228, 138, 54);
+}
+.navdefault {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  color: blanchedalmond;
+}
+.navscroll {
+  background-color: rgb(24, 21, 19);
+  color: rgb(226, 184, 117);
+}
+header label,
+#toggle {
+  display: none;
+}
+.slide-content {
+  position: absolute;
+  bottom: 20%;
+  left: 4%;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.slide-content h1 {
+  font-size: 5.5em;
+}
+.slide-content span h1 {
+  font-size: 2.5em;
+}
+.slide-content mark {
+  background-color: burlywood;
+  border-radius: 10px;
+  color: rgb(146, 61, 12);
+}
+#myHeading {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+/* Responsive Design */
+@media (max-width: 767px) {
+  header label {
+    display: block;
+  }
+  header #toggle:checked ~ .nav-links {
+    display: block;
+  }
+  header .nav-links {
+    width: 100%;
+    display: none;
+    background-color: burlywood;
+  }
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  header .nav-links a {
+    color: rgb(66, 43, 8);
+  }
+  .slide-content h1 {
+    font-size: 2em;
+  }
+}
+.details {
+  background-color: burlywood;
+  height: 100vh;
+}
+.details .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}
+.details .content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.container .content {
+  color: rgb(247, 219, 183);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  border: 2px solid rgb(151, 105, 78);
+  background-color: rgb(68, 32, 5);
+  margin-top: 90px;
+  border-radius: 10px;
+}
+.container .content p {
+  font-size: 1.5em;
+}
+.container .content button {
+  padding: 5px;
+  font-size: 2em;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: burlywood;
+  color: black;
+  border: none;
+  outline: none;
+}
+.container .content button:hover {
+  background-color: transparent;
+  color: burlywood;
+  border: 1px solid burlywood;
+}
+@media (max-width: 767px) {
+  .details {
+    height: auto;
+  }
+  .details .container {
+    flex-direction: column;
+  }
+}
+.house {
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(71, 39, 13);
+  text-align: center;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: bisque;
+}
+.deal h2 {
+  font-size: 3.5em;
+  margin-top: 5px;
+  color: rgb(233, 152, 46);
+}
+.deal img {
+  margin-top: 70px;
+  width: 15%;
+}
+.deal p {
+  font-size: 1.5em;
+}
+.deal a {
+  text-decoration: none;
+  color: rgb(194, 148, 48);
+}
+@media (max-width: 767px) {
+  .deal h2 {
+    font-size: 2em;
+  }
+  .deal p {
+    font-size: 1em;
+  }
+}
+.section {
+  height: 80vh;
+  width: 100%;
+  background-color: burlywood;
+}
+.section .offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 95%;
+}
+.offer img {
+  margin-top: 50px;
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+}
+.cont {
+  margin-left: 150px;
+}
+.cont h2 {
+  font-size: 3em;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: rgb(119, 68, 9);
+}
+.cont p {
+  font-size: 2em;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+.cont button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+  background-color: rgb(59, 37, 7);
+  color: blanchedalmond;
+  font-size: 1.5em;
+}
+@media (max-width: 767px) {
+  .section {
+    height: 100%;
+  }
+  .offer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .offer img {
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+}
+.section .btn {
+  display: flex;
+  text-align: right;
+}
+.section .btn button {
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+  background-color: rgb(71, 49, 14);
+  color: blanchedalmond;
+  width: 40px;
+  height: 30px;
+}
+footer {
+  background-color: black;
+  padding: 40px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-container img{
+    width: 200px;
+    height: 90px;
+}
+.footer-section {
+  margin: 20px;
+  width: 22%;
+}
+.footer-section h4 {
+  font-size: 30px;
+  color: #f7c294;
+  margin-bottom: 15px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.footer-section p,
+.footer-section ul {
+  font-size: 16px;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+.footer-section ul li a:hover {
+  color: #c28c5c;
+}
+.footer-section ul.social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.footer-section ul.social-media li a {
+  font-size: 20px;
+  color: #f0f0f0;
+  transition: color 0.3s ease;
+}
+.footer-section ul.social-media li a:hover {
+  color: #c7986f;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #f0d095;
+  padding-top: 10px;
+}
+.footer-bottom p {
+  font-size: 14px;
+  color: #888;
+}
